@@ -1,0 +1,22 @@
+# Ignore Everything
+*
+
+# Zsh
+!.zshrc
+!.zsh
+!.zsh/*
+!.zsh/contrib
+!.zsh/contrib/*
+
+# Git
+!.gitconfig
+!.gitignore
+!.gitexcludes
+
+# Vim
+!.vimrc
+!.vim
+!.vim/*
+
+# Face
+~.face
