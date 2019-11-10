@@ -163,3 +163,4 @@ alias dexit='disown -a && exit'
 
 greptovim() {
     grep $1 -RIil . | grep -v ".git" | grep -v arch | grep -v delivery | grep -v contrib | xargs bash -c '</dev/tty vim "$@"' ignore
+}
