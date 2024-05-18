@@ -165,7 +165,7 @@ greptovim() {
     grep $1 -RIil . | grep -v ".git" | grep -v arch | grep -v delivery | grep -v contrib | xargs bash -c '</dev/tty vim "$@"' ignore
 }
 
-if [ -d "~/.conda" ]; then
+if [ -d "${HOME}/.conda" ]; then
   __conda_setup="$('/home/bellockk/.conda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
   if [ $? -eq 0 ]; then
       eval "$__conda_setup"
